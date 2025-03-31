@@ -10,15 +10,13 @@ export default function Ganhos() {
     end={{x:1,y:0}}
     style={styles.divGanhos}
     >
-      <View>
-          <View>
-              <Text>Ganhos do dia</Text>
-              <Text>29/07</Text>
-          </View>
-          <View>
-              <Text>R$ 150</Text>
-              <Image/>
-          </View>
+      <View style={styles.divDia}>
+        <Text style={styles.txtDia}>Ganhos do dia</Text>
+        <Text style={styles.txtDia}>29/07</Text>
+      </View>
+      <View style={styles.divValores}>
+        <Text style={styles.txtValores}>R$ 150</Text>
+        <Image source={require('@/assets/icons/eye/eye-x1.png')}/>
       </View>
     </LinearGradient>
   )
@@ -28,5 +26,28 @@ export default function Ganhos() {
 const styles = StyleSheet.create({
   divGanhos: {
     borderRadius: 16,
+    padding: 16,
+  },
+  divDia: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  },
+  txtDia: {
+    fontSize: 16,
+    color: '#FFFFFF'
+  },
+  divValores: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+    padding: 9,
+  },
+
+  txtValores: {
+    color: '#FFFFFF',
+    fontSize: 30,
+    fontWeight: 'bold',
   }
 })
