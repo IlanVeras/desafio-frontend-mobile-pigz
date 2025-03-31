@@ -1,7 +1,7 @@
 import {View, Text, TextInput, StyleSheet} from "react-native"
 import React from 'react'
 
-export default function PasswordLogin({textValue,setTextValue}) {
+export default function PasswordLogin({textValue,setTextValue}:any) {
   return (
     <View>
       <Text style={styles.textLabel}>Senha</Text>

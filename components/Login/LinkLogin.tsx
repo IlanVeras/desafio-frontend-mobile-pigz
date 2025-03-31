@@ -13,5 +13,6 @@ const styles = StyleSheet.create({
   linkLogin: {
     marginTop: 24,
     marginBottom: 24,
+    textDecorationLine:  'underline'
   }
 })
