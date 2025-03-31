@@ -21,7 +21,7 @@ export default function Login() {
             <InputLogin textValue={email} setTextValue={setEmail}/>
             <PasswordLogin textValue={senha} setTextValue={setSenha}/>
             <LinkLogin textValue={"Esqueci minha senha"}/>
-            <MyButton textValue={"Entrar"}/>
+            <MyButton textValue={"Entrar"} route={'/home'} img={''}/>
             <CreateAcc/>
             <EntrarTrace/>
             <GoogleLogin/>
