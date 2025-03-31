@@ -4,12 +4,14 @@ import InputLogin from '@/components/Login/InputLogin';
 import LinkLogin from '@/components/Login/LinkLogin';
 import PasswordLogin from '@/components/Login/PasswordLogin'
 import MyButton from '@/components/MyButton';
+import PigzImageLogin from '@/components/Login/PigzImageLogin';
 
 export default function Login() {
     const [email,setEmail] = React.useState('')
     const [senha,setSenha] = React.useState('')
     return (
       <View style={styles.divMain}>
+        <PigzImageLogin/>
         <Text style={styles.header1}>Pigz entregadores</Text>
         <Text style={styles.header2}>Login</Text>
         <InputLogin textValue={email} setTextValue={setEmail}/>
