@@ -15,6 +15,7 @@ export default function MyButton({ textValue, route, img }: any) {
         colors={['#FF881F','#FA641E']}
         start={{x:0,y:0}}
         end={{x:1,y:0}}
+        style={styles.divButton}
       >
         <TouchableOpacity style={styles.myButtonImg} onPress={handlePress}>
           <Image source={require("@/assets/icons/qr/QR-x1.png")}/>
@@ -29,6 +30,7 @@ export default function MyButton({ textValue, route, img }: any) {
       colors={['#FF881F','#FA641E']}
       start={{x:0,y:0}}
       end={{x:1,y:0}}
+      style={styles.divButton}
     >
       <TouchableOpacity style={styles.myButton} onPress={handlePress}>
         <Text style={styles.buttonText}>{textValue}</Text>
@@ -38,6 +40,9 @@ export default function MyButton({ textValue, route, img }: any) {
 }
 
 const styles = StyleSheet.create({
+  divButton: {
+    borderRadius: 16,
+  },
   myButtonImg: {
     flexDirection: 'row',
     paddingVertical: 10, // Espaçamento vertical
