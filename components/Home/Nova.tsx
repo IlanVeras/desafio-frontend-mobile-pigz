@@ -11,7 +11,7 @@ export default function Nova() {
         <InputHome/>
         <Text>OK</Text>
         <MyButton  
-        textValue="Continuar com QR Code" 
+        textValue="Escanear QrCode" 
         route="/login" 
         img={true}/>
     </View>

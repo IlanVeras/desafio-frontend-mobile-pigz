@@ -3,13 +3,15 @@ import React from 'react'
 import Ganhos from '@/components/Home/Ganhos'
 import Entregas from '@/components/Home/Entregas'
 import Nova from '@/components/Home/Nova'
+import HeaderBack from '@/components/HeaderBack'
 
 export default function home() {
   return (
     <View style={styles.divHome}>
-      <View>
+      {/* <View>
           <Text>Visão Geral</Text>
-      </View>
+      </View> */}
+      <HeaderBack textValue={'Visão Geral'}/>
 
       <Ganhos/>
 
