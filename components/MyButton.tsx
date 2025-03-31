@@ -1,5 +1,6 @@
 import { TouchableOpacity, Text, StyleSheet, Image } from "react-native";
 import { useRouter } from "expo-router";
+import { LinearGradient } from 'expo-linear-gradient';
 import React from "react";
 
 export default function MyButton({ textValue, route, img }: any) {
@@ -10,24 +11,35 @@ export default function MyButton({ textValue, route, img }: any) {
 
   if(img){
     return(
-      <TouchableOpacity style={styles.myButtonImg} onPress={handlePress}>
-        <Image source={require("@/assets/icons/qr/QR-x1.png")}/>
-        <Text style={styles.buttonTextImg}>{textValue}</Text>
-      </TouchableOpacity>
+      <LinearGradient
+        colors={['#FF881F','#FA641E']}
+        start={{x:0,y:0}}
+        end={{x:1,y:0}}
+      >
+        <TouchableOpacity style={styles.myButtonImg} onPress={handlePress}>
+          <Image source={require("@/assets/icons/qr/QR-x1.png")}/>
+          <Text style={styles.buttonTextImg}>{textValue}</Text>
+        </TouchableOpacity>
+      </LinearGradient>
     )
   }
 
   return (
-    <TouchableOpacity style={styles.myButton} onPress={handlePress}>
-      <Text style={styles.buttonText}>{textValue}</Text>
-    </TouchableOpacity>
+    <LinearGradient
+      colors={['#FF881F','#FA641E']}
+      start={{x:0,y:0}}
+      end={{x:1,y:0}}
+    >
+      <TouchableOpacity style={styles.myButton} onPress={handlePress}>
+        <Text style={styles.buttonText}>{textValue}</Text>
+      </TouchableOpacity>
+    </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
   myButtonImg: {
     flexDirection: 'row',
-    backgroundColor: "#FA641E", // Cor de fundo
     paddingVertical: 10, // Espaçamento vertical
     paddingHorizontal: 20, // Espaçamento horizontal
     borderRadius: 16, // Borda arredondada
@@ -46,7 +58,6 @@ const styles = StyleSheet.create({
 
 
   myButton: {
-    backgroundColor: "#FA641E", // Cor de fundo
     paddingVertical: 10, // Espaçamento vertical
     paddingHorizontal: 20, // Espaçamento horizontal
     borderRadius: 16, // Borda arredondada
