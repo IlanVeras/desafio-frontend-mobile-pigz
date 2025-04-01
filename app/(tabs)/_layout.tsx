@@ -1,8 +1,19 @@
 import { Tabs } from "expo-router";
-import { Image } from "react-native";
+import { Image, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons"; 
+import * as Font from "expo-font";
+import { useFonts } from "expo-font";
+import React from "react";
 
 export default function TabsLayout() {
+  const [fontsLoaded,setFontsLoaded] = useFonts({
+    'Poppins-Regular': require('@/assets/fonts/Poppins/Poppins-Regular.ttf')
+  })
+
+  if(!fontsLoaded){
+    return <Text>Loading. . .</Text>
+  }
+
   return (
     <Tabs 
     screenOptions={{ 

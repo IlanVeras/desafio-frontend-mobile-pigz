@@ -39,11 +39,13 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: 'bold',
         marginTop: 8,
+        fontFamily: "Poppins-Regular",
     },
     header2: {
         fontSize: 16,
         color: "#222222",
         fontWeight: 'bold',
         marginTop: 37,
+        fontFamily: "Poppins-Regular",
     },
 })

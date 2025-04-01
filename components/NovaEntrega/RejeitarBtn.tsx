@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
   },
   txtRejeitar: {
     fontSize: 16,
-    color: '#E8453E'
+    color: '#E8453E',
+    fontFamily: "Poppins-Regular", // Adicione aqui
   }
 })

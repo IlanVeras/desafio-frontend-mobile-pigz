@@ -34,11 +34,13 @@ const styles = StyleSheet.create({
         fontSize: 14,
         color: '#707070',
         textAlign: 'center',
+        fontFamily: "Poppins-Regular", // Adicione aqui
     },
     txtEntrega: {
         fontSize: 20,
         color: '#FA641F',
         fontWeight: 'bold',
         textAlign: 'center',
+        fontFamily: "Poppins-Regular", // Adicione aqui
     }
 })
