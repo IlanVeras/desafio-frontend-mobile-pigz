@@ -7,9 +7,9 @@ export default function Index() {
 
   React.useEffect(() => {
     setTimeout(() => {
-      // router.replace("/login");
+      router.replace("/login");
       // router.replace("/home")
-      router.replace("/novaEntrega")
+      // router.replace("/novaEntrega")
     }, 0); // Usa um pequeno delay para evitar o erro
   }, []);
 
