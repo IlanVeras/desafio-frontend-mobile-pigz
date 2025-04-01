@@ -15,7 +15,10 @@
    ```bash
     npx expo start
    ```
-
+3. Onde as telas estão?
+<p>Tela de Login: Assim que o app é renderizado você já é levado a tela inicial</p>
+<p>Tela de Visão Geral: ao clicar no botão 'Entrar' da tela de login você é levado a tela de Visão Geral</p>
+<p>Tela de Entregas: Ao clicar no botão 'Escanear QrCode' você é levado a tela de Entrega</p>
 <!-- In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
