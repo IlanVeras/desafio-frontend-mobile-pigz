@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         borderRadius: 16,
         padding: 7,
+        margin: 6,
     },
     imgEntrega: {
       justifyContent: 'center',
