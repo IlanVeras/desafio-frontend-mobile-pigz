@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 12,
     borderRadius: 16,
+    marginBottom: 15,
   },
   imgBtnAceitar: {
     marginRight: 6,
