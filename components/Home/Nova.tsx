@@ -14,7 +14,7 @@ export default function Nova() {
         </View>
         <MyButton  
         textValue="Escanear QrCode" 
-        route="/login" 
+        route="/novaEntrega" 
         img={true}/>
     </View>
   )
