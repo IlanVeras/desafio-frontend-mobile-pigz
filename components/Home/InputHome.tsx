@@ -4,7 +4,7 @@ import React from 'react'
 export default function InputHome() {
   return (
     <View style={styles.divInput}>
-      <TextInput placeholder='teste'/>
+      <TextInput/>
     </View>
   )
 }
