@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
+
 export default function EntregaDetails() {
   return (
     <View style={styles.divDetails}>

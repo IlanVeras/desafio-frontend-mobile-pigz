@@ -6,12 +6,12 @@ import EntregaDetails from '@/components/NovaEntrega/EntregaDetails'
 import RejeitarBtn from '@/components/NovaEntrega/RejeitarBtn'
 import Valor from '@/components/NovaEntrega/Valor'
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 
 
 export default function novaEntrega() {
   return (
-    <View>
+    <View style={styles.divMainEntrega}>
        <HeaderBack textValue={'Nova Entrega'}/>
         <EntregaDetails/>
         <Valor/>
@@ -22,3 +22,9 @@ export default function novaEntrega() {
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+    divMainEntrega: {
+        padding: 24,
+    }
+})
