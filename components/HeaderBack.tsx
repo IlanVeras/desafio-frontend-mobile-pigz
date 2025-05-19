@@ -6,7 +6,7 @@ export default function HeaderBack({textValue}:any) {
     const router = useRouter()
   return (
     <View style={styles.headerBack}>
-      <TouchableOpacity onPress={() => router.back()}>
+      <TouchableOpacity onPress={() => router.push('/login')}>
           <Image source={require('@/assets/icons/arrowBack/arrow_back_black_24dp.png')}/>
       </TouchableOpacity>
       <Text style={styles.textHeader}>{textValue}</Text>
